@@ -80,7 +80,7 @@ were the assets of this release." Both should pass.
 | Artifact | Signature |
 |---|---|
 | The Windows installer and the `SpamBlaster.exe` inside it | Authenticode, **Wilburn Pacific Company**, RFC-3161 timestamped, through Azure Artifact Signing |
-| Both macOS `.dmg` files and every application inside them | Apple **Developer ID**, hardened runtime, notarized by Apple and stapled. Team `B8RQ33BAP8` |
+| The macOS `.dmg` and the application inside it | Apple **Developer ID**, hardened runtime, notarized by Apple and stapled. Team `B8RQ33BAP8` |
 | The Thunderbird `.xpi` | **Unsigned, and that is not an omission.** Thunderbird operates no add-on signing server and does not require signed add-ons ([Bugzilla 1549562](https://bugzilla.mozilla.org/show_bug.cgi?id=1549562), resolved WONTFIX). There is no signature to check at any level. Its integrity rests on the SHA-256 and the build attestation, both of which cover it. |
 
 Signatures are verified inside the pipeline before anything is uploaded, and every published

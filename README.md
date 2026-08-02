@@ -20,8 +20,7 @@ with its checksums, software bill of materials and build attestation.
 | Download | Contains |
 |---|---|
 | **Windows installer** (`.exe`) | The daemon, the dashboard, the classic-Outlook add-in and the Outlook web panes. Start here on Windows. |
-| **macOS suite** (`-Suite_....dmg`) | The daemon, the dashboard, the web panes, plus the Apple Mail extension and its menu-bar helper. Start here on macOS. |
-| **macOS hub only** (`SpamBlaster_....dmg`) | The daemon, the dashboard and the web panes, without the Apple Mail extension. For Outlook-for-Mac or Thunderbird users. |
+| **macOS app** (`.dmg`) | The daemon, the dashboard, the web panes, and Blast for Apple Mail, all in one application. Start here on macOS. |
 | **Thunderbird add-on** (`.xpi`) | The Thunderbird add-in. It talks to the daemon, so it needs one of the installers above. |
 
 The daemon is the hub. The add-ins are thin: they hand a blocked sender to the daemon, and the
@@ -29,7 +28,7 @@ daemon does the filtering. You only need the add-in for the mail app you actuall
 
 ## Requirements
 
-- Windows 10 or 11 (x64), or macOS on Apple silicon.
+- Windows 10 or 11 (x64), or macOS 14 or later on Apple silicon.
 - A mailbox reachable by Microsoft Graph (Hotmail, Outlook.com, Exchange, Microsoft 365) or by
   IMAP with an app password (Gmail, iCloud, Yahoo, Fastmail and most other providers).
 - Thunderbird 115 or later, if you want the Thunderbird add-on.
